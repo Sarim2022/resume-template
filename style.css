@@ -22,46 +22,67 @@
             background: white;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            padding: 30px;
+            /* padding: 30px; */
+            padding-bottom: 30px;
             display: grid;
             grid-template-columns: 1fr;
             gap: 20px;
         }
         
         .header {
-            text-align: center;
-            margin-bottom: 10px;
+            border-top-left-radius:8px ;
+            border-top-right-radius:8px ;
+            text-align: left;
+            /* margin-bottom: 20px; */
+            padding: 30px;
+            background-color: rgb(82, 99, 118);
         }
         
         .header h1 {
             font-size: clamp(1.5rem, 4vw, 1.8rem); /* Responsive font size */
             color: #2c3e50;
             margin-bottom: 5px;
-            text-transform: uppercase;
+            color: white;
             word-break: keep-all;
         }
         
         .header p {
             font-size: clamp(0.85rem, 3vw, 0.9rem);
             color: #7f8c8d;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+             color: white;
+
         }
+        
+
         
         .contact {
             display: flex;
-            flex-direction: column; /* Stack on mobile */
             align-items: center;
-            gap: 8px;
+            flex-direction: column; /* Stack on mobile */
+            color: white;
+            gap: 10px;
             font-size: 0.8rem;
             word-break: break-all; /* Allow email to break if needed */
         }
-        
+        .icon {
+            height: 1rem;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+        a{
+            text-decoration:  none;
+             color: white;
+        }
         .contact span {
             display: inline-block;
         }
         
         .section {
-            margin-bottom: 15px;
+            /* margin-bottom: 15px; */
+    
+            padding-left: 30px;
+            padding-right: 30px;
         }
         
         .section-title {
@@ -138,49 +159,30 @@
                 font-size: 1.3rem;
             }
         }
-.download-btn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            background-color: #3498db;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            cursor: pointer;
-            z-index: 100;
-            transition: all 0.3s ease;
-            border: none;
-        }
-        
-        .download-btn:hover {
-            background-color: #2980b9;
-            transform: scale(1.1);
-        }
-        
-        .download-btn i {
-            font-size: 24px;
-        }
-        
-        /* Add this if you want to use Font Awesome icons */
-        .fa-download {
-            /* This will be added by Font Awesome */
-        }
-        
-        /* Mobile responsiveness for the button */
-        @media (max-width: 768px) {
-            .download-btn {
-                width: 50px;
-                height: 50px;
-                bottom: 20px;
-                right: 20px;
-            }
-            
-            .download-btn i {
-                font-size: 20px;
-            }
-        }
+ .download-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.download-btn svg {
+  width: 24px;
+  height: 24px;
+}
