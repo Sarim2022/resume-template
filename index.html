@@ -6,15 +6,18 @@
     <title>Sarim Hasan - Compact Resume</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
     <div class="resume-card">
         <header class="header">
-            <h1>SARIM HASAN</h1>
+            <h1>Sarim hasan <a href="https://www.linkedin.com/in/srhwo/" target="_blank"><img src="immgs/lfinal.png" class="icon" alt=""></a></h1>
             <p>Final-year CSE student with hands-on project experience and a curious mind for tech innovation.</p>
             <div class="contact">
-                <span>Sarimhasan2022@gmail.com</span>
-                <a href="">Linkedin</a>
+                <span><img src="immgs/mail.png" class="icon">Sarimhasan2022@gmail.com</span>
+                <span><img src="immgs/cell-phone.png" class="icon">8448048903</span>
+                <span><img src="immgs/location.png" class="icon">New Delhi, India</span>
             </div>
         </header>
         
@@ -22,14 +25,19 @@
             <h2 class="section-title">EDUCATION</h2>
             <div class="item">
                 <h3>Bachelor of technology in computer science & Engineering</h3>
+                <p>
+                    Ongoing..
+                </p>
                 <p><strong>Jamia Hamdard University</strong></p>
-                <p class="meta">New delhi  SGPA</p>
-                <p>• 7.0(4th sem)</p>
+                <p class="meta">New delhi</p>
+                <p>  SGPA • 7.0 (4th sem)</p>
             </div>
             <div class="item">
                 <h3>Victoria Modern Public School</h3>
                 <p><strong>CBSE Board</strong></p>
-                <p class="meta">Sr. Secondary edu : 62%  Secondary edu : 73%</p>
+                <p class="meta">New delhi</p>
+                <p class="meta">Sr. Secondary education : 62%  </p>
+                <p class="meta">Secondary education : 73%</p>
             </div>
         </div>
         
@@ -71,6 +79,7 @@
                 <span class="skill">CSS</span>
                 <span class="skill">Python</span>
                 <span class="skill">Flask</span>
+                <span class="skill">Rest API</span>
                 <span class="skill">SQL</span>
                 <span class="skill">Data Structures</span>
                 <span class="skill">Flutter</span>
@@ -79,30 +88,46 @@
                 <span class="skill">Numpy</span>
                 <span class="skill">Machine Learning</span>
                 <span class="skill">JavaScript</span>
+                <span class="skill">Algorithms</span>
+                <span class="skill">Flutter</span>
+                <span class="skill">OOPS</span>
+                <span class="skill">DBMS</span>
             </div>
         </div>
         
         <div class="section">
             <h2 class="section-title">CODING</h2>
             <div class="item">
-                <h3>Leetcode 130+</h3>
-                <p class="meta">leetcode.com/uj/Sarimhasan2022/</p>
+                <h3>
+                <a target="_blank" href="https://leetcode.com/your-profile" style="color: #3498db; text-decoration: none;" target="_blank">
+                    Leetcode</i>
+                </a>
+                </h3>
+                 <p class="meta">130+ problems <i class="bi bi-arrow-right"></i></p>
             </div>
             <div class="item">
-                <h3>GeeksforGeeks 65+</h3>
-                <p class="meta">geeksforgeeks.org/user/sarimhasowyc/</p>
+                <h3>
+                    <a target="_blank" href="https://leetcode.com/your-profile" style="color: #3498db; text-decoration: none;" target="_blank">
+                        Geeksforgeeks</i>
+                    </a>
+                </h3>
+                 <p class="meta">65+  problems  <i class="bi bi-arrow-right"></i></p>
             </div>
         </div>
         
         <div class="section">
             <h2 class="section-title">CERTIFICATES</h2>
             <div class="item">
-                <h3>Problem Solving Basic</h3>
-                <p class="meta">HackerRank</p>
+                <h3><a target="_blank"
+ href="https://www.hackerrank.com/certificates/f8723c5c585a" style="color: #3498db; text-decoration: none;
+ ">Problem Solving Basic</a></h3>
+                <p class="meta">HackerRank <i class="bi bi-arrow-right"></i></p>
             </div>
             <div class="item">
-                <h3>Google Cloud Arcade Facilitator</h3>
-                <p class="meta">2025 C1</p>
+                <h3><a target="_blank"
+ href="https://www.cloudskillsboost.google/public_profiles/ca17d5a8-e5a2-4ca7-8dea-04d532743427" style="color: #3498db; text-decoration: none;
+ ">Google Cloud Arcade Facilitator</a></h3>
+                <p class="meta">2025 C1 <i class="bi bi-arrow-right"></i></p>
             </div>
         </div>
         
@@ -115,35 +140,29 @@
             </div>
         </div>
     </div>
-    <button class="download-btn" id="downloadResume" title="Download Resume">
-        <i class="fas fa-download"></i>
-    </button>
 
-    <script>
-        // JavaScript to handle the download functionality
-        document.getElementById('downloadResume').addEventListener('click', function() {
-            // Method 1: Direct download if you have a PDF version
-            // window.open('path/to/your-resume.pdf', '_blank');
-            
-            // Method 2: Generate PDF from HTML (requires html2pdf.js)
-            // You'll need to include html2pdf.js library for this to work
-            /*
-            const element = document.querySelector('.resume');
-            const opt = {
-                margin: 10,
-                filename: 'Sarim_Hasan_Resume.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2 },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-            
-            // New Promise-based usage:
-            html2pdf().set(opt).from(element).save();
-            */
-            
-            // Method 3: Simple alert if neither option is set up
-            alert("Download functionality would save the resume as PDF here.\nFor now, you can use your browser's Print to PDF feature (Ctrl+P or Cmd+P).");
-        });
-    </script>
+<button id="downloadPdf" class="download-btn" title="Download as PDF">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+    <polyline points="7 10 12 15 17 10"></polyline>
+    <line x1="12" y1="15" x2="12" y2="3"></line>
+  </svg>
+</button>
+<script>
+    document.getElementById('downloadPdf').addEventListener('click', function() {
+  const element = document.body; // or a specific div if you want just part of the page
+  
+  const opt = {
+    margin: 10,
+    filename: 'Sarim_Hasan_Resume.pdf',
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+  };
+
+  // Generate PDF
+  html2pdf().set(opt).from(element).save();
+});
+</script>
 </body>
 </html>
