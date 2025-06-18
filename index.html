@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sarim Hasan - Compact Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="resume-card">
+        <header class="header">
+            <h1>SARIM HASAN</h1>
+            <p>Final-year CSE student with hands-on project experience and a curious mind for tech innovation.</p>
+            <div class="contact">
+                <span>Sarimhasan2022@gmail.com</span>
+                <a href="">Linkedin</a>
+            </div>
+        </header>
+        
+        <div class="section">
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="item">
+                <h3>Bachelor of technology in computer science & Engineering</h3>
+                <p><strong>Jamia Hamdard University</strong></p>
+                <p class="meta">New delhi  SGPA</p>
+                <p>• 7.0(4th sem)</p>
+            </div>
+            <div class="item">
+                <h3>Victoria Modern Public School</h3>
+                <p><strong>CBSE Board</strong></p>
+                <p class="meta">Sr. Secondary edu : 62%  Secondary edu : 73%</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="item">
+                <h3>Medreminder App</h3>
+                <p>An app that helps people remember to take their medicine on time.</p>
+                <div class="skills">
+                    <span class="skill">Flutter</span>
+                    <span class="skill">Firebase</span>
+                    <span class="skill">Cursor Ai</span>
+                </div>
+            </div>
+            <div class="item">
+                <h3>Hotel Booking QR Webpage</h3>
+                <p>Mobile-friendly hotel booking webpage accessed via QR codes.</p>
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                </div>
+            </div>
+            <div class="item">
+                <h3>Secret Message Web App</h3>
+                <p>User send and retrieve secret messages using unique codes.</p>
+                <div class="skills">
+                    <span class="skill">Python</span>
+                    <span class="skill">Flask</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">SKILLS</h2>
+            <div class="skills">
+                <span class="skill">Java</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Python</span>
+                <span class="skill">Flask</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Data Structures</span>
+                <span class="skill">Flutter</span>
+                <span class="skill">Firebase</span>
+                <span class="skill">Pandas</span>
+                <span class="skill">Numpy</span>
+                <span class="skill">Machine Learning</span>
+                <span class="skill">JavaScript</span>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">CODING</h2>
+            <div class="item">
+                <h3>Leetcode 130+</h3>
+                <p class="meta">leetcode.com/uj/Sarimhasan2022/</p>
+            </div>
+            <div class="item">
+                <h3>GeeksforGeeks 65+</h3>
+                <p class="meta">geeksforgeeks.org/user/sarimhasowyc/</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">CERTIFICATES</h2>
+            <div class="item">
+                <h3>Problem Solving Basic</h3>
+                <p class="meta">HackerRank</p>
+            </div>
+            <div class="item">
+                <h3>Google Cloud Arcade Facilitator</h3>
+                <p class="meta">2025 C1</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">INTERESTS</h2>
+            <div class="skills">
+                <span class="skill">Games</span>
+                <span class="skill">Coding</span>
+                <span class="skill">Travelling</span>
+            </div>
+        </div>
+    </div>
+    <button class="download-btn" id="downloadResume" title="Download Resume">
+        <i class="fas fa-download"></i>
+    </button>
+
+    <script>
+        // JavaScript to handle the download functionality
+        document.getElementById('downloadResume').addEventListener('click', function() {
+            // Method 1: Direct download if you have a PDF version
+            // window.open('path/to/your-resume.pdf', '_blank');
+            
+            // Method 2: Generate PDF from HTML (requires html2pdf.js)
+            // You'll need to include html2pdf.js library for this to work
+            /*
+            const element = document.querySelector('.resume');
+            const opt = {
+                margin: 10,
+                filename: 'Sarim_Hasan_Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            
+            // New Promise-based usage:
+            html2pdf().set(opt).from(element).save();
+            */
+            
+            // Method 3: Simple alert if neither option is set up
+            alert("Download functionality would save the resume as PDF here.\nFor now, you can use your browser's Print to PDF feature (Ctrl+P or Cmd+P).");
+        });
+    </script>
+</body>
+</html>

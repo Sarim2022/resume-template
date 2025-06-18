@@ -1,0 +1,186 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Changed from center to prevent overflow */
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.4;
+        }
+        
+        .resume-card {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            font-size: clamp(1.5rem, 4vw, 1.8rem); /* Responsive font size */
+            color: #2c3e50;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            word-break: keep-all;
+        }
+        
+        .header p {
+            font-size: clamp(0.85rem, 3vw, 0.9rem);
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        
+        .contact {
+            display: flex;
+            flex-direction: column; /* Stack on mobile */
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+            word-break: break-all; /* Allow email to break if needed */
+        }
+        
+        .contact span {
+            display: inline-block;
+        }
+        
+        .section {
+            margin-bottom: 15px;
+        }
+        
+        .section-title {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 4px;
+        }
+        
+        .item {
+            margin-bottom: 10px;
+            break-inside: avoid; /* Prevent breaking across columns */
+        }
+        
+        .item h3 {
+            font-size: 0.9rem;
+            color: #3498db;
+            margin-bottom: 3px;
+        }
+        
+        .item p {
+            font-size: 0.8rem;
+            color: #555;
+            margin-bottom: 3px;
+        }
+        
+        .item .meta {
+            font-size: 0.75rem;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 5px;
+        }
+        
+        .skill {
+            background: #e8f4fc;
+            color: #2c7be5;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            white-space: nowrap; /* Prevent skill tags from breaking */
+        }
+        
+        /* Tablet and larger screens */
+        @media (min-width: 768px) {
+            .resume-card {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .header {
+                grid-column: 1 / -1;
+            }
+            
+            .contact {
+                flex-direction: row;
+                justify-content: center;
+                word-break: normal;
+            }
+        }
+        
+        /* Very small mobile devices */
+        @media (max-width: 360px) {
+            .resume-card {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.3rem;
+            }
+        }
+.download-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            cursor: pointer;
+            z-index: 100;
+            transition: all 0.3s ease;
+            border: none;
+        }
+        
+        .download-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+        
+        .download-btn i {
+            font-size: 24px;
+        }
+        
+        /* Add this if you want to use Font Awesome icons */
+        .fa-download {
+            /* This will be added by Font Awesome */
+        }
+        
+        /* Mobile responsiveness for the button */
+        @media (max-width: 768px) {
+            .download-btn {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .download-btn i {
+                font-size: 20px;
+            }
+        }
