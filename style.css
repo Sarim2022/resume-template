@@ -133,7 +133,7 @@
         }
         
         /* Tablet and larger screens */
-        @media (min-width: 768px) {
+        @media (min-width: 468px) {
             .resume-card {
                 grid-template-columns: 1fr 1fr;
             }
